@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" />
+	<title>
+		Toggleable Sidebar using 
+		HTML CSS & JavaScript
+	</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div id="sideMenu" class="sideMenu">
+		<a href="javascript:void(0)"
+			class="closeBtn"
+			onclick="closeNav()">×</a>
+		<div class="mainMenu">
+			<h2>The Line of Control</h2>
+			<a href="javascript:void(0)"
+				onclick="showContent('Home')">Home</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('About')">About</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('Portfolio')">Portfolio</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('Services')">Services</a>
+			<a href="javascript:void(0)"
+				onclick="showContent('Contact')">Contact</a>
+		</div>
+	</div>
+	
+	<div id="contentArea">
+		<span style="font-size: 30px; cursor: pointer"
+			onclick="openNav()">☰</span>
+		<div class="contentText">
+<a href="#" class="btn btn-primary"><span class="arrow reverse">&#10132;</span> About LOC </a>
+            <br>
+    <!--  class="container-fluid"> -->
+    <div class="row">
+        <div class="col">
+           
+                <h2>Turtuk-Thang</h2>
+                
+                <a href="#" class="btn btn-primary"> Explore <span class="arro">&#10132;</span></a>
+
+        </div>
+
+        <div class="col">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href="Turtuk"><img src="images/Background.jpg" alt="Photo 1" class="img-fluid" style="max-width: 250px;"><figcaption>Pangong tso</figcaption></a>
+                            <a href="Turtuk"><img src="images/Background.jpg" alt="Photo 2" class="img-fluid" style="max-width: 250px;"><figcaption>Tsomoriri</figcaption></a>
+                            <a href="Turtuk"><img src="images/Background.jpg" alt="Photo 3" class="img-fluid" style="max-width: 250px;"><figcaption>Nubra</figcaption></a>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <a href="Turtuk"><img src="images/Background.jpg" alt="Photo 4" class="img-fluid" style="max-width: 250px;"><figcaption>Thiksay</figcaption></a>
+                            <a href="Turtuk"><img src="images/Background.jpg" alt="Photo 5" class="img-fluid" style="max-width: 250px;"><figcaption>Namkila</figcaption></a>
+                            <a href="Turtuk"><img src="images/Background.jpg" alt="Photo 6" class="img-fluid" style="max-width: 250px;"><figcaption>Shey</figcaption></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap JavaScript (including jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

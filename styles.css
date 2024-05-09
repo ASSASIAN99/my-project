@@ -1,0 +1,505 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+.container-fluid {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.custom-header {
+  position: absolute;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+
+
+
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 0px; /* Add padding for better appearance */
+  margin-bottom: 500px; /* Add margin bottom to bring header down */
+}
+.container {
+  width: 50%;
+
+}
+.container-50 {
+  width: 50%;
+}
+.content {
+  text-align: center;
+  padding-top: 20%;
+  padding: 50px;
+  color: white;
+}
+body, html {
+  margin: 10px;
+  padding: 40px;
+  height: 100%;
+}
+/* body {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+/* Styles for home page background */
+body.home-page {
+  background-image: url('images/Background.jpg'); /* Example background color for home page */
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Styles for about page background */
+body.loc-page {
+  background-image: url('images/Background.jpg'); /* Example background color for about page */
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.lac-page {
+  background-image: url('images/hanla.jpg'); /* Example background color for about page */
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.custom-header nav a {
+  color: white;
+}
+.custom-header .container {
+  position: relative;
+}
+/* Customizing carousel arrows */
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" fill="%23fff"%3E%3Cpath d="M5.854 0l-4 4 4 4 1.415-1.414L3.268 4 7.268.414 5.854 0z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+/* Keeping the carousel-control-next-icon the same as before */
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" fill="%23fff"%3E%3Cpath d="M5.854 0l-4 4 4 4 1.415-1.414L3.268 4 7.268.414 5.854 0z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+
+/* Adjusted CSS for carousel controls */
+/* .carousel-control-next, .carousel-control-prev {
+  width: 15%;
+  bottom: -150px; /* Adjust the position of arrows */
+/* } */ */
+
+p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+}
+/* nav {
+  background-color: white;} */
+/**
+ * Render the `main` element consistently in IE.
+ */
+.header-link {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid transparent; /* Transparent border */
+  border-radius: 20px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+
+  margin: 10px;
+  padding: 10px; /* Adjust the padding as needed */
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    color: white;
+}
+
+/* Styles for hover state */
+.header-link:hover {
+  border-color: white; /* White border on hover */
+}
+.carousel-item.active {
+  border: none;
+}
+
+
+
+/* Styles for the slideshow container */
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the slides */
+.slides {
+  display: flex;
+}
+
+/* Styles for each slide */
+.slide {
+  flex: 0 0 33.33%; /* Display three images per slide */
+}
+
+/* Styles for images */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  font-size: 30px; /* Adjust the font size to enlarge the arrow */
+  background-color: rgba(0, 0, 0, 0); /* Set background color to fully transparent */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.prev {
+  left: 40%;
+}
+
+.next {
+  right: 40%;
+}
+
+
+/* Styles for active state */
+/* a.active {
+  /* Your styles for the active link */
+  /* border: 2px solid white; /* White border */
+  /* border-radius: 20px; Rounded corners */ */
+/* } */ */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  font-family: 'Montserrat';
+  font-weight: 700; /* Bold */
+  font-size: 24px; /* Adjust the font size as needed */
+  position: relative; /* Required for positioning the arrow */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */  /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Border radius for rounded corners */
+    color: white;
+    padding-left: 40px;
+  padding-right: 40px; /* Adjust the padding to create space for the arrow */
+}
+
+
+
+
+.arrow {
+  position: absolute;
+  right: 5px; /* Adjust the distance of the arrow from the text */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.reverse {
+  left: 5px; /* Adjust the distance of the reverse arrow from the text */
+  right: auto;
+  transform: translateY(-50%) rotate(180deg); /* Rotate the arrow */
+}
+.btn:active {
+  border-color: white;
+  background-color: rgb(225,191,146)
+}
+.btn:hover {
+  border-color: white;
+  background-color: 	rgb(236, 154, 54);
+}
+
+
+body {
+  margin: 0px;
+  padding: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  border: 4px solid white;
+  border-radius: 20px;
+  padding: 0px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  width: 1000px;
+  height: 65px; /* Adjust the height as needed */
+  text-align: center; /* Align content to the center */
+  margin: 0 auto; /* Center the box horizontally */
+  display: flex; /* Use flexbox */
+  justify-content: space-around; /* Distribute contents evenly along the box */
+  align-items: center; /* Center items vertically */
+  color: white;
+}
+.header-link {
+  border: 2px solid transparent; /* Transparent border initially */
+  border-radius: 20px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+}
+
+a:hover {
+  color: white; /* Change the color to your preferred color on hover */
+}
+
+/* .header-link:hover,
+.header-link:active {
+  border-color: white; /* White border on hover and when active */
+/* } */ */
+
+
+
+.links {
+  text-decoration: none;
+  color: red;
+  font-size: 0px;
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+}
+.links.hover {
+  color: white;
+}
+.links:last-child {
+  margin-right: 0;
+}
+
+.links::after {
+  content: "|";
+  margin-left: 40px;
+  color: white;
+}
+.links:last-child::after {
+  content: ""; /* Remove the vertical bar for the last link */
+}
+
+@font-face {
+  font-family: 'Batangas';
+  src: url('Batangas Bold 700.otf') format('truetype');
+}
+h1 {
+  font-family: 'Batangas';
+  font-size: 60px;
+  color: white /* Blue color */
+}
+h2 {
+  font-family: 'Batangas';
+  font-size: 40px;
+  color: white /* Blue color */
+}
+
+
+/* style.css */
+
+.sideMenu {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: white;
+	overflow-x: hidden;
+	transition: 1.6s;
+	padding-top: 60px;
+}
+
+.mainMenu h2 {
+	text-align: center;
+	letter-spacing: 7px;
+	color: black;
+	padding: 20px 0;
+}
+
+.sideMenu a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	color: black;
+	display: block;
+	transition: 2s;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.sideMenu p {
+  padding: 8px 8px 8px 32px;
+	color: black;
+	margin-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+  font-weight: bold;
+}
+/* Styles for centered header on index page */
+
+.active {
+  border: 2px solid transparent; /* Transparent border */
+  border-radius: 20px; /* Rounded corners */
+  margin: 10px;
+  padding: 10px; /* Adjust the padding as needed */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+  color: white;
+  /* background-color: white; */
+  border-color: white;
+}
+
+.mainMenu a:hover {
+	color: #fff;
+	background: #111;
+}
+
+.sideMenu .closeBtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#contentArea {
+	transition: margin-left 2s;
+	padding: 16px;
+  opacity: 1; /* Ensure opacity is set to 1 initially */
+  transition: opacity 1s ease; /* Add transition for opacity */
+}
+/* Styles for content */
+
+
+/* Hide content when transitioning */
+#contentArea.hidden {
+  opacity: 0;
+}
+#header {
+	transition: margin-left 2s;
+}
+
+/* .contentText {
+	padding: 100px 20px;
+	text-align: center;
+} */
+
+/* .contentText h2 {
+	display: inline-block;
+	padding: 15px 10px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+} */
+
+/* .contentText h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 0;
+	letter-spacing: 3px;
+} */
+
+/* @media screen and (min-width: 768px) {
+	.contentText {
+		padding: 100px 180px;
+	}
+
+	/* .contentText h2 {
+		padding: 15px 35px;
+		font-size: 50px;
+	}
+
+	.contentText h3 {
+		font-size: 45px;
+	} */
+/* } */
+
+/* Dot and dash pattern */
+.dot-dash {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 10px); /* Adjust position horizontally */
+  transform: translateY(-50%);
+  width: 20px; /* Adjust width of dot and dash */
+  height: 2px; /* Adjust height of dot and dash */
+  background-color: #000; /* Color of dot and dash */
+}
+
+/* Styling for the dot */
+.dot-dash:before {
+  content: '';
+  display: inline-block;
+  width: 6px; /* Adjust dot width */
+  height: 6px; /* Adjust dot height */
+  border-radius: 50%; /* Make dot round */
+  background-color: #000; /* Color of dot */
+  margin-right: 5px; /* Spacing between dot and dash */
+}
+
+/* Styling for the dash */
+.dot-dash:after {
+  content: '';
+  display: inline-block;
+  width: 8px; /* Adjust dash width */
+  height: 2px; /* Adjust dash height */
+  background-color: #000; /* Color of dash */
+  margin-left: 5px; /* Spacing between dash and dot */
+}
+
+
+/* Styles for the long bold button */
+.long-bold-button {
+  padding: 10px 20px; /* Adjust padding to increase button size */
+  font-weight: bold; /* Make text bold */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 2px solid #000; /* Add border for visibility */
+  background-color: #fff; /* Set background color */
+  color: #000; /* Set text color */
+  cursor: pointer;
+}
